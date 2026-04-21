@@ -46,3 +46,9 @@ public:
                 cout << "\nDuplikasi noMhs tidak diizinkan\n";
                 return;
             }
+            previous = current;
+            current = current->next;
+        }
+        nodeBaru->next = current;
+        previous->next = nodeBaru;
+    }
